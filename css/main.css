@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 6rem auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 40%;
+}
+
+.container-item{
+    display: flex;
+    flex: 1 0 200px;
+    padding: 2rem 2.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 400px;
+}
+
+.flex-item{
+    color: white;
+}
+
+.container-item.sedan-class{
+    background-color: hsl(31, 77%, 52%)
+}
+
+.container-item.suv-class{
+    background-color: hsl(184, 100%, 22%)
+}
+
+.container-item.luxury-class{
+    background-color: hsl(179, 100%, 13%)
+}
+
+.container-item .item-title{
+    font-size: 2rem;
+    font-family: 'Nova Flat', cursive;
+}
+
+.container-item .item-description{
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    line-height: 1.6rem;
+}
+
+.container-item .item-button{
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 20px;
+    border:none;
+}
+
+.container-item.sedan-class .item-button{
+    color:  hsl(31, 77%, 52%);
+}
+
+.container-item.suv-class .item-button{
+    color: hsl(184, 100%, 22%)
+}
+
+.container-item.luxury-class .item-button{
+    color:  hsl(179, 100%, 13%)
+}
+
+.footer{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        flex-direction: column;
+        width: 90%;
+        margin: 2rem auto;
+    }
+  }
+
+  .container-item{
+    min-height: 300px;
+}
+
+
